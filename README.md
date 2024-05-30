@@ -1,1 +1,1 @@
-# SYDE-655-Optimal---Learning-Based-Control
+# SYDE-655-Optimal-And-Learning-Based-Control
