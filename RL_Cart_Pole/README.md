@@ -29,7 +29,7 @@ Run the Docker container with port 8888 mapped:
 ``` 
 Similarly this can be done using docker desktop
 
-![Docker Desktop Port Mapping](docker_mapping_port_mapping.png "Docker Desktop Port Mapping")
+![Docker Desktop Port Mapping](docker_desktop_port_mapping.PNG "Docker Desktop Port Mapping")
 
 
 ## Accessing Jupyter Notebook
