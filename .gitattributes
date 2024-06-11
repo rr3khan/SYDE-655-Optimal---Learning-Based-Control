@@ -1,0 +1,6 @@
+# Ensure all text files use LF line endings
+* text=auto
+
+# Specific handling for certain file types
+*.sh text eol=lf
+*.py text eol=lf
