@@ -22,9 +22,6 @@ RUN apt-get install -y xvfb
 # Make port 8888 available to the world outside this container
 EXPOSE 8888
 
-# Define environment variable
-ENV NAME World
-
 # Copy the current directory contents into the container at /app
 COPY . .
 
