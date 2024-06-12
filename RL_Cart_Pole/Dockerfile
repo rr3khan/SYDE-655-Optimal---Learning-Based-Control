@@ -5,22 +5,14 @@ FROM python:3.11
 # Set the working directory to /app
 WORKDIR /app
 
-# Install Jupyter Notebook
-RUN pip install jupyter
-# Install gymnasium
-RUN  pip install gymnasium[classic-control] 
-
-# Install libraries for visualization
-RUN pip install matplotlib
-RUN pip install pyvirtualdisplay
-RUN apt-get update -y
-RUN apt-get install -y xvfb
+# Install Jupyter Notebook, gymnasium, formatting and linting tools, and libraries for visualization
+RUN pip install jupyter gymnasium[classic-control] ruff nbqa matplotlib pyvirtualdisplay && \
+    apt-get update -y && \
+    apt-get install -y xvfb && \
+    rm -rf /var/lib/apt/lists/*
 
 # Make port 8888 available to the world outside this container
 EXPOSE 8888
-
-# Define environment variable
-ENV NAME World
 
 # Copy the current directory contents into the container at /app
 COPY . .
