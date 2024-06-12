@@ -10,6 +10,9 @@ RUN pip install jupyter
 # Install gymnasium
 RUN  pip install gymnasium[classic-control] 
 
+# Install formatting and linting tools
+RUN pip install ruff nbqa
+
 # Install libraries for visualization
 RUN pip install matplotlib
 RUN pip install pyvirtualdisplay
